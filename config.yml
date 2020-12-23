@@ -1,0 +1,16 @@
+title: emotion-reader-final
+description: This is a course.
+template:
+  repo: emotion-reader-final-template
+  name: emotion-reader-final
+before:
+  - type: createIssue
+    title: Welcome!
+    body: new-issue.md
+steps:
+  - title: First step
+    description: The first step in your course
+    event: issues.assigned
+    link: '{{ repoUrl }}'
+    actions:
+      - type: closeIssue
